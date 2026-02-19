@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AARA Premium Collections</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="video/IMG_3374.PNG">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="index.css">
+
+<style>
+
+/* ===== BODY ===== */
+
+/* ===== BRAND COLORS ===== */
+:root{
+    --primary-dark: #2E8A94;   /* lighter teal */
+    --primary-light: #6FC2C8;
+    --primary-soft: #EAF7F8;
+}
+
+
+/* ===== BODY ===== */
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,var(--primary-soft),#ffffff);
+}
+
+/* ===== HEADER SEARCH ===== */
+.header{
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    position:sticky;
+    top:0;
+    background:linear-gradient(135deg,var(--primary-dark),var(--primary-light));
+    z-index:100;
+    box-shadow:0 5px 20px rgba(12,104,115,0.25);
+}
+
+.search-input{
+    width:100%;
+    max-width:950px;
+    padding:18px 30px;
+    border-radius:50px;
+    border:none;
+    font-size:16px;
+    outline:none;
+    box-shadow:0 8px 25px rgba(12,104,115,0.15);
+    transition:0.3s;
+}
+
+.search-input:focus{
+    box-shadow:0 12px 35px rgba(12,104,115,0.35);
+}
+
+/* ===== SECTION ===== */
+.section{
+    max-width:1300px;
+    margin:70px auto;
+    padding:0 30px;
+}
+
+.section h2{
+    font-size:28px;
+    color:var(--primary-dark);
+    margin-bottom:30px;
+    border-left:5px solid var(--primary-light);
+    padding-left:12px;
+}
+
+/* ===== GRID ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:30px;
+}
+
+/* ===== CARD ===== */
+/* ===== GLASS CARD ===== */
+.card{
+    position:relative;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(12,104,115,0.15);
+    box-shadow:0 10px 30px rgba(12,104,115,0.12);
+    transition:all 0.4s ease;
+    cursor:pointer;
+}
+
+/* IMAGE SECTION */
+.card-img{
+    width:100%;
+    height:220px;
+    overflow:hidden;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 0.6s ease;
+}
+
+/* CONTENT */
+.card-content{
+    padding:18px;
+    text-align:center;
+}
+
+.card-content h4{
+    margin:0;
+    font-size:16px;
+    font-weight:600;
+    color:#0c6873;
+}
+
+/* HOVER EFFECT */
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(12,104,115,0.30);
+}
+
+.card:hover img{
+    transform:scale(1.12);
+}
+
+/* SHINE EFFECT */
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-75%;
+    width:50%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.1)
+    );
+    transform:skewX(-25deg);
+    transition:0.7s;
+}
+
+.card:hover::before{
+    left:125%;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .grid{
+        grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <input type="text" class="search-input" id="searchInput">
+</div>
+
+<div class="section">
+<h2>Personal Gifts</h2>
+<div class="grid">
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0001.jpg"></div><div class="card-content"><h4>A little box of happiness</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0002.jpg"></div><div class="card-content"><h4>The celebration edit</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0003.jpg"></div><div class="card-content"><h4>Love & Light collection x</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0004.jpg"></div><div class="card-content"><h4>sweet Union Hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0005.jpg"></div><div class="card-content"><h4>signature Select Boxx</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0006.jpg"></div><div class="card-content"><h4>Forever & Always Collection </h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0007.jpg"></div><div class="card-content"><h4>Calm & Cozy Collection </h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0008.jpg"></div><div class="card-content"><h4>Heritage blend collection </h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0009.jpg"></div><div class="card-content"><h4>Elite gift</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0010.jpg"></div><div class="card-content"><h4>Little box of joy</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0011.jpg"></div><div class="card-content"><h4>Love in a bag</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0012.jpg"></div><div class="card-content"><h4>Pop of happiness</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0013.jpg"></div><div class="card-content"><h4>Brew bliss</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0014.jpg"></div><div class="card-content"><h4> Wedding trunk</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0015.jpg"></div><div class="card-content"><h4> Table treasure </h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0016.jpg"></div><div class="card-content"><h4> Ruby wedding treasure</h4></div></div>
+<div class="card"><div class="card-img"><img src="Personal/Personalized Gifting Solutions_page-0017.jpg"></div><div class="card-content"><h4>Surprise Love Box</h4></div></div>
+
+
+</div>
+</div>
+
+
+
+
+<!-- ================= CUSTOM HAMPERS ================= -->
+<div class="section">
+<h2>Custom Gifts</h2>
+<div class="grid">
+
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0001.jpg"></div><div class="card-content"><h4>Prestige blue</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0002.jpg"></div><div class="card-content"><h4>Princess pack</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0003.jpg"></div><div class="card-content"><h4>Dreamy doll hamper </h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0004.jpg"></div><div class="card-content"><h4>Rose copper hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0005.jpg"></div><div class="card-content"><h4>Floral flame</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0006.jpg"></div><div class="card-content"><h4>Glow girl box</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0007.jpg"></div><div class="card-content"><h4>Blue signature </h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0008.jpg"></div><div class="card-content"><h4>Teal majesty box</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0009.jpg"></div><div class="card-content"><h4>Unicorn sparkle edition </h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0010.jpg"></div><div class="card-content"><h4>Forever in red</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0011.jpg"></div><div class="card-content"><h4>Desert bronze hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0012.jpg"></div><div class="card-content"><h4>King in black</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0013.jpg"></div><div class="card-content"><h4>Emerald hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="Custom/Curated Custom Hamper Collections_page-0014.jpg"></div><div class="card-content"><h4>Shadow supreme</h4></div></div>
+
+</div>
+</div>
+
+
+<!-- ================= Corporate ================= -->
+<div class="section">
+<h2>Corporate Gifts</h2>
+<div class="grid">
+
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0001.jpg"></div><div class="card-content"><h4>The executive ember box</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0002.jpg"></div><div class="card-content"><h4>Rustic peach reserve</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0003.jpg"></div><div class="card-content"><h4>Cheers and charm collection </h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0004.jpg"></div><div class="card-content"><h4>Midnight celebration hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0005.jpg"></div><div class="card-content"><h4>Flolapo moments</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0006.jpg"></div><div class="card-content"><h4> Dream home hamper </h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0007.jpg"></div><div class="card-content"><h4>Sip & sweet hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0008.jpg"></div><div class="card-content"><h4>The new nest box</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0009.jpg"></div><div class="card-content"><h4> The thoughtful trio </h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0010.jpg"></div><div class="card-content"><h4>Fearless & fabulous bag</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0011.jpg"></div><div class="card-content"><h4>Wine& dine box</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0012.jpg"></div><div class="card-content"><h4>Blue aura box</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0013.jpg"></div><div class="card-content"><h4>The rustic roar box</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0014.jpg"></div><div class="card-content"><h4>The wild nest box</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0015.jpg"></div><div class="card-content"><h4> Ocean breeze hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0016.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0017.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="cp/Corporate & Launch Gifting_page-0018.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+</div>
+</div>
+
+
+<!-- ================= Festive ================= -->
+<div class="section">
+<h2>Festive & Seasonal Gifts</h2>
+<div class="grid">
+
+<div class="card"><div class="card-img"><img src="ff/Blissful bites.jpg"></div><div class="card-content"><h4>Blissful bitesr</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Choco glow ritual box.jpg"></div><div class="card-content"><h4>Choco glow ritual box</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Classic carol collection.jpg"></div><div class="card-content"><h4>Classic carol collection</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Delightful diwali treats.jpg"></div><div class="card-content"><h4>Delightful diwali treats</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Devine light & delight.jpg"></div><div class="card-content"><h4>Devine light & delight.jpg</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Diwali& gather.jpg"></div><div class="card-content"><h4>Diwali& gather</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Festival of light collection.jpg"></div><div class="card-content"><h4>Festival of light collection</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Festive flavour collection.jpg"></div><div class="card-content"><h4>Festive flavour collection</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Golden glow hamper.jpg"></div><div class="card-content"><h4>Golden glow hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Ho ho holiday hamper.jpg"></div><div class="card-content"><h4>Ho ho holiday hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Jingle & mingle.jpg"></div><div class="card-content"><h4>Jingle & mingle</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Merry meltaways.jpg"></div><div class="card-content"><h4>Merry meltaways</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Mithai magic hamper.jpg"></div><div class="card-content"><h4>Mithai magic hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Nuts & savoury spark.jpg"></div><div class="card-content"><h4>Nuts & savoury spark</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Rosy nutty bag.jpg"></div><div class="card-content"><h4>Rosy nutty bag</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Scarlet treasure hamper.jpg"></div><div class="card-content"><h4>Scarlet treasure hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Sweet celebration.jpg"></div><div class="card-content"><h4>Sweet celebration.jpg</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/Sweet flame box.jpg"></div><div class="card-content"><h4>Sweet flame</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/1.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/2.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/3.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/4.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/5.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/8.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/9.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/21.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/27.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+<div class="card"><div class="card-img"><img src="ff/19.jpg"></div><div class="card-content"><h4>Luxury Flower Combo</h4></div></div>
+
+</div>
+</div>
+
+
+<!-- =================  Baby ================= -->
+<div class="section">
+<h2> Baby Gifts</h2>
+<div class="grid">
+
+<div class="card"><div class="card-img"><img src="baby/Baby & Newborn Gifting Collection (1)_page-0001.jpg"></div><div class="card-content"><h4>Tiny treasure trunk</h4></div></div>
+<div class="card"><div class="card-img"><img src="baby/Baby & Newborn Gifting Collection (1)_page-0002.jpg"></div><div class="card-content"><h4>Mini marvel bundle</h4></div></div>
+<div class="card"><div class="card-img"><img src="baby/Baby & Newborn Gifting Collection (1)_page-0003.jpg"></div><div class="card-content"><h4>Majestic moments hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="baby/Baby & Newborn Gifting Collection (1)_page-0004.jpg"></div><div class="card-content"><h4>⁠Little snowflake surprise</h4></div></div>
+
+
+</div>
+</div>
+
+
+<!-- =============Luxury collection -->
+
+
+<div class="section">
+<h2> Luxury Collection</h2>
+<div class="grid">
+
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0001.jpg"></div><div class="card-content"><h4>Midnight majesty </h4></div></div>
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0002.jpg"></div><div class="card-content"><h4> Ratan royal hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0003.jpg"></div><div class="card-content"><h4>Pink luxe party</h4></div></div>
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0004.jpg"></div><div class="card-content"><h4>Love in time</h4></div></div>
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0005.jpg"></div><div class="card-content"><h4>Silver shadow </h4></div></div>
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0006.jpg"></div><div class="card-content"><h4>Timber treasure hamper</h4></div></div>
+<div class="card"><div class="card-img"><img src="Luxury/Luxury theme hampers_page-0007.jpg"></div><div class="card-content"><h4>Cherry bliss box</h4></div></div>
+
+</div>
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<!-- ================= FOOTER ================= -->
+<footer class="pt-5" id="contact">
+    <div class="container footer-container">
+        <div class="row g-4">
+
+            <!-- BRAND -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="video/IMG_3374.PNG" class="footer-logo me-3">
+                    <div>
+                        <div class="footer-brand">AARA</div>
+                        <div class="footer-sub">by Arthi</div>
+                    </div>
+                </div>
+                <p>
+                    Started in 2023 with a simple dream — to make gifting more meaningful, personal, and unforgettable.
+                </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="col-md-4">
+                <h5 class="footer-title">Quick Links</h5>
+                <a href="index.html" class="footer-link d-block">Home</a>
+                <a href="Collection.html" class="footer-link d-block">Products</a>
+                <a href="wishlist.html" class="footer-link d-block">Wishlist</a>
+                <a href="cart.html" class="footer-link d-block">Cart</a>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-md-4">
+                <h5 class="footer-title">Contact Us</h5>
+                <p><i class="bi bi-envelope-fill me-2"></i> aarabyarthi@gmail.com</p>
+                <p><i class="bi bi-telephone-fill me-2"></i> +91 90039 00706</p>
+                <p><i class="bi bi-telephone-fill me-2"></i> +91 97912 63413</p>
+
+                <!-- LOCATION -->
+                <p>
+                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    9, Hindustan Avenue, Kamadhenu Nagar, Avarampalayam, 
+                    Illango Nagar, Coimbatore, Tamil Nadu 641006
+                </p>
+
+                <!-- SOCIAL ICONS -->
+                <div class="mt-3">
+                    <a href="#" class="social-icon me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon me-2"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom mt-4 text-center">
+            © 2026 <strong>AARA by Arthi</strong>. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- whatspp -->
+
+<a href="https://wa.me/919876543210" class="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Add remaining sections same pattern (Corporate, Festive, Baby) -->
+
+<script>
+
+/* ===== Typing Effect ===== */
+const input = document.getElementById("searchInput");
+const text = "AARA by Arthi — We curate, you celebrate 💝";
+let index = 0;
+
+function typePlaceholder() {
+    if (index <= text.length) {
+        input.setAttribute("placeholder", text.substring(0, index));
+        index++;
+        setTimeout(typePlaceholder, 70);
+    } else {
+        setTimeout(() => {
+            index = 0;
+            typePlaceholder();
+        }, 2000);
+    }
+}
+typePlaceholder();
+
+/* ===== Live Search ===== */
+input.addEventListener("keyup", function(){
+    const filter = input.value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        const title = card.innerText.toLowerCase();
+        card.style.display = title.includes(filter) ? "" : "none";
+    });
+});
+
+
+
+ /////////footer////
+
+const reveals = document.querySelectorAll(".scroll-reveal");
+
+function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach((el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+/////////mouse
+window.addEventListener("load",()=>{
+    const loader=document.getElementById("loadingScreen");
+
+    setTimeout(()=>{
+        loader.style.opacity="0";
+        loader.style.visibility="hidden";
+    },1500); // stays visible for 1.5s
+});
+
+
+
+</script>
+
+</body>
+</html>

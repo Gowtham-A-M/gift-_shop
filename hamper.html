@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AARA by Arthi - Brand Promise</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+/* ================= BODY ================= */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fffaf8;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar.custom-navbar {
+    background: #b11226;
+    padding: 15px 30px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700;
+}
+
+.navbar-brand .brand-text small {
+    font-size: 12px;
+    color: #fff;
+}
+
+/* ================= BRAND PROMISE SECTION ================= */
+.brand-promise-section {
+    background: linear-gradient(to bottom, #fffaf8, #fdf8f5);
+    padding: 80px 0;
+}
+
+.promise-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #b11226;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Optional gold underline */
+.promise-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, gold, #dc3545, gold);
+    border-radius: 2px;
+}
+
+/* Text content */
+.promise-text {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Scroll animations */
+.scroll-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Image styling */
+.promise-img-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.promise-image {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .promise-heading {
+        font-size: 30px;
+    }
+    .promise-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-promise-section {
+        padding: 60px 15px;
+    }
+}
+/* ================= FOUNDER SECTION ================= */
+
+/* ================= ULTRA PREMIUM FOUNDER ================= */
+
+/* ================= ROOT COLORS ================= */
+:root{
+    --primary-dark: #2E8A94;     /* lighter teal */
+    --primary-light: #6FC2C8;    /* soft teal */
+    --primary-soft: #E6F7F8;     /* very light teal background */
+}
+.founder-section{
+    background: linear-gradient(135deg, #f9fdfd, var(--primary-soft));
+    padding: 100px 0;
+}
+
+/* GOLDEN FRAME WRAPPER */
+.founder-image-wrapper{
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 35px;
+    background: linear-gradient(135deg,  #2E8A94,#6FC2C8,#EAF7F8);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.founder-image-wrapper:hover{
+    transform: translateY(-10px);
+}
+
+/* IMAGE */
+.founder-img{
+    border-radius: 28px;
+    max-width: 380px;
+    display: block;
+}
+
+/* TITLE */
+.founder-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-dark);   /* USING YOUR TEAL */
+    margin-bottom: 10px;
+}
+
+/* NAME */
+.founder-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #b8860b; /* gold */
+    margin-bottom: 20px;
+}
+
+/* ROLE */
+.founder-role{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-light);  /* USING YOUR LIGHT TEAL */
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.founder-text{
+    font-size: 16px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* SIGNATURE */
+.founder-signature{
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: #b8860b;
+    margin-top: 25px;
+}
+
+/* SCROLL REVEAL ANIMATION */
+.scroll-reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.scroll-reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="video/IMG_3374.PNG" alt="AARA Logo" class="me-2" style="height:40px;">
+        <span class="brand-text">AARA <small>by Arthi</small></span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="wishlist.html" class="btn btn-outline-light rounded-circle me-2">
+            <i class="bi bi-heart-fill"></i>
+        </a>
+        <a href="cart.html" class="btn btn-light me-3">
+            <i class="bi bi-cart-fill"></i> (<span id="cartCount">0</span>)
+        </a>
+        <span class="text-light fw-bold me-2"><i class="bi bi-headset"></i> 24x7 Support</span>
+    </div>
+</nav>
+
+<!-- ================= OUR BRAND PROMISE ================= -->
+<section class="brand-promise-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-6 promise-left scroll-left">
+                <h2 class="promise-heading">Our Brand Promise</h2>
+
+                <p class="promise-text">
+                    <strong>AARA by Arthi</strong> was created with one simple intention -<br>
+                    to make gifting feel warm, personal, and unforgettable.
+                </p>
+
+                <p class="promise-text">
+                    When you choose <strong>AARA</strong>, you're not just choosing a hamper.<br>
+                    You're choosing care.<br>
+                    You're choosing elegance.<br>
+                    You're choosing meaning.
+                </p>
+
+                <p class="promise-text">
+                    From the products we select to the way we tie the final ribbon, everything is done with heart.<br>
+                    We promise to treat every order as if it's meant for someone special -<br>
+                    because to you, it always is.
+                </p>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 text-center scroll-right">
+                <div class="promise-img-wrapper">
+                    <img src="video/About_us.jpeg" class="promise-image img-fluid" alt="AARA Brand">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOUNDER SECTION ================= -->
+<!-- ================= ULTRA PREMIUM FOUNDER ================= -->
+<section class="founder-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Founder Image -->
+            <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                <div class="founder-image-wrapper scroll-reveal">
+                    <img src="video/pic/founde.jpeg" 
+                         class="founder-img img-fluid"
+                         alt="Arthi - Founder of AARA">
+                </div>
+            </div>
+
+            <!-- Founder Content -->
+            <div class="col-lg-7 scroll-reveal">
+                <h2 class="founder-title">The Heart Behind AARA</h2>
+                <h4 class="founder-name">Arthi</h4>
+
+                <p class="founder-text">
+                    AARA was born from a simple yet powerful belief — that every gift
+                    should tell a story. With a deep passion for elegance and detail,
+                    Arthi transforms ordinary moments into unforgettable memories.
+                </p>
+
+                <p class="founder-text">
+                    From curated luxury hampers to personalized creations,
+                    every piece reflects warmth, sophistication, and love.
+                </p>
+
+                <div class="founder-signature">Arthi</div>
+                <div class="founder-role">Founder, AARA</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Scroll animation
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.scroll-left, .scroll-right').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100) {
+            el.classList.add('active');
+        }
+    });
+});
+
+const reveals = document.querySelectorAll(".scroll-reveal");
+
+function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach((el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+</script>
+
+</body>
+</html>
